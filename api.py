@@ -13,7 +13,7 @@ from qdrant_client import QdrantClient
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-INDEX_DIR = r"C:\Users\Photogauge\Desktop\Projects\CBIR\cbir_demo\demo\index"  # Directory where index images are stored
+INDEX_DIR = "./index"  # Directory where index images are stored
 print(os.listdir(INDEX_DIR))
 
 # Initialize Qdrant client
